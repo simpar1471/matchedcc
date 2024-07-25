@@ -6,6 +6,8 @@
 <!-- badges: start -->
 
 [![R-CMD-check](https://github.com/simpar1471/matchedcc/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/simpar1471/matchedcc/actions/workflows/R-CMD-check.yaml)
+[![CRAN
+status](https://www.r-pkg.org/badges/version/matchedcc)](https://CRAN.R-project.org/package=matchedcc)
 <!-- badges: end -->
 
 The aim of matchedcc is to provide epidemiologists using R with

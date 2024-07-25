@@ -7,6 +7,7 @@ template:
     primary: "#5b9bd5"
     base_font: {google: "Roboto"}
     heading_font: {google: "Open Sans"}
+    math-rendering: mathjax
 reference:
   - title: Functions
     contents:
