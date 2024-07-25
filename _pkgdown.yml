@@ -1,0 +1,14 @@
+url: ~
+template:
+  bootstrap: 5
+articles:
+  - title: All vignettes
+    contents:
+      - matchedcc
+reference:
+  - title: Functions
+    contents:
+      - mcc
+  - title: Data
+    contents:
+      - mccxmpl

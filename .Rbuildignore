@@ -1,0 +1,10 @@
+^.idea$
+^LICENSE\.md$
+^_pkgdown\.yml$
+^docs$
+^pkgdown$
+^README\.Rmd$
+^\.github$
+^data-raw$
+^vignettes/articles$
+^cran-comments\.md$
