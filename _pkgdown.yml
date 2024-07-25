@@ -1,10 +1,12 @@
 url: https://simpar1471.github.io/matchedcc/
 template:
+  light-switch: true
   bootstrap: 5
-articles:
-  - title: All vignettes
-    contents:
-      - matchedcc
+  bootswatch: litera
+  bslib:
+    primary: "#5b9bd5"
+    base_font: {google: "Roboto"}
+    heading_font: {google: "Open Sans"}
 reference:
   - title: Functions
     contents:

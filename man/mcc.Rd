@@ -16,15 +16,15 @@ and an error will be thrown if you attempt to provide these parameters as
 well as \code{table}. If provided, these variables are used to construct a 2x2
 matrix in the same format as \code{table}.}
 
-\item{table}{A 2x2 integerish (according to \code{checkmate::check_integerish()})
-matrix with matched case-control data. The default value of \code{table} is
-\code{NULL}, and an error will be thrown if you provide \code{table} as well as
-\code{cases} and \code{controls}.
+\item{table}{A 2x2 integerish (see \code{checkmate::check_integerish()}) matrix
+with matched case-control data. The default value of \code{table} is \code{NULL}, and
+an error will be thrown if you provide \code{table} as well as \code{cases} and
+\code{controls}.
 
 The table should have the following format, where each cell represents a
 pair of a matched case and control:\tabular{lll}{
-    \tab Controls \tab  \cr
-   Cases \tab Exposed \tab Unexposed \cr
+   \strong{Cases} \tab \strong{Controls} \tab  \cr
+    \tab Exposed \tab Unexposed \cr
    Exposed \tab a \tab b \cr
    Unexposed \tab c \tab d \cr
 }}
@@ -48,16 +48,17 @@ with \code{mcnemar.test()}, \emph{without} Yates' continuity correction.}
 \item{\code{proportions}}{A two-element numeric vector with the proportion of
 of cases and controls with the exposure.}
 \item{\code{statistics}}{A 4 row, 3 column numeric matrix with point estimates
-and confidence intervals for the risk ratio, risk difference, relative
-difference, and odds ratio.}
+and confidence intervals for the ratio, difference, and relative
+difference in the proportion of cases/controls with the exposure, and
+the odds ratio.}
 }
 }
 \description{
 Using data from vectors, data from a 2x2 contingency table, or individual
 cell counts, \code{mcc()} and \code{mcci()} will calculate McNemar's \eqn{\chi^{2}};
 point estimates and confidence intervals for the difference, ratio, and
-relative difference of proportion with the factor; and the odds ratio with a
-confidence interval.
+relative difference of proportion of pairs with the exposure; and the odds
+ratio with a confidence interval.
 }
 \examples{
 data <- matchedcc::mccxmpl
