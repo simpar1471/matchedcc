@@ -185,4 +185,4 @@ can be seen in `/tests/testdata/run-stata-mcc.R`.
 ## Citation
 
 Parker S (2024). *matchedcc: Stata-like matched case-control analysis*.
-<https://github.com/lshtm-gigs/gigs/>.
+<https://github.com/simpar1471/matchedcc/>.
