@@ -1,20 +1,20 @@
 Type: Package
 Package: matchedcc
-Title: 'Stata'-like matched case-control analysis
-Version: 0.0.0.9000
-Date: 2024-07-25
+Title: 'Stata'-Like Matched Case-Control Analysis
+Version: 0.1.0
+Date: 2024-11-19
 Authors@R:
-    person("Simon", "Parker", email = "simon.parker@lshtm.ac.uk",
+    person(c("Simon", "R"), "Parker", email = "simon.parker24@ucl.ac.uk",
            role = c("aut", "cre", "cph"),
            comment = c(ORCID = "0009-0003-8214-4496"))
-Maintainer: Simon Parker <simon.parker@lshtm.ac.uk>
+Maintainer: Simon R Parker <simon.parker24@ucl.ac.uk>
 Description: Calculate multiple statistics with confidence intervals for matched
     case-control data including risk difference, risk ratio, relative
     difference, and the odds ratio. Results are equivalent to those from
     'Stata', and you can choose how to format your input data.
 License: GPL (>= 3)
 Encoding: UTF-8
-RoxygenNote: 7.3.1
+RoxygenNote: 7.3.2
 Roxygen: list(markdown = TRUE)
 URL: https://github.com/simpar1471/matchedcc/,
     https://simpar1471.github.io/matchedcc/
@@ -33,7 +33,8 @@ Suggests:
     stringr,
     purrr,
     knitr,
-    rmarkdown
+    rmarkdown,
+    RStata
 LazyData: true
 Config/Needs/website: rmarkdown
 VignetteBuilder: knitr

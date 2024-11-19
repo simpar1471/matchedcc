@@ -11,30 +11,35 @@ status](https://www.r-pkg.org/badges/version/matchedcc)](https://CRAN.R-project.
 [![codecov](https://codecov.io/gh/simpar1471/matchedcc/graph/badge.svg?token=OJSHMFFGXN)](https://codecov.io/gh/simpar1471/matchedcc)
 <!-- badges: end -->
 
-The aim of matchedcc is to provide epidemiologists using R with
+The aim of **matchedcc** is to provide epidemiologists using R with
 Stata-like analysis of matched case-control data. This package has two
 functions, `mcc()` and `mcci()`, which are direct analogues of Stata’s
 own `mcc` and `mcci` commands.
 
 ## Installation
 
-You can install the development version of matchedcc from
-[GitHub](https://github.com/) with:
+You can install **matchedcc** from CRAN with:
 
 ``` r
-# install.packages("devtools")
-devtools::install_github("simpar1471/matchedcc")
+install.packages("matchedcc")
+```
+
+You can also install the development version from GitHub with **pak**:
+
+``` r
+# install.packages("pak")
+pak::pkg_install("simpar1471/matchedcc")
 ```
 
 ## Examples
 
-The functions in matchedcc are easy to use. To demonstrate their use, we
-will use the `mccxmpl` dataset, which is included in matchedcc. This
-dataset has two columns - `cases` and `controls`. In this dataset, cases
-had experienced a heart attack, and cases and controls were matched
-accordingly. Each column has only `1` or `0` values, which describe
-whether a case or control encountered our exposure - in this case,
-drinking \>6 cups of coffee per day.
+The functions in **matchedcc** are easy to use. To demonstrate their
+use, we will use the `mccxmpl` dataset, which is included in
+**matchedcc**. This dataset has two columns - `cases` and `controls`. In
+this dataset, cases had experienced a heart attack, and cases and
+controls were matched accordingly. Each column has only `1` or `0`
+values, which describe whether a case or control encountered our
+exposure - in this case, drinking \>6 cups of coffee per day.
 
 ``` r
 library(matchedcc)
@@ -138,8 +143,8 @@ mcc(table = mcc_table)
 
 ### ‘Immediate’ input
 
-Last but not least, if you have cell counts from a 2x2 table, you can
-provide individual cell counts to `mcci()`:
+Last but not least, if you have individual cell counts from a 2x2 table,
+you can provide them to `mcci()`:
 
 ``` r
 mcci(a = 8, b = 8, c = 3, d = 8)

@@ -84,8 +84,8 @@
 #'      b = table[1,2],
 #'      c = table[2,1],
 #'      d = table[2,2])
-#' @export
 #' @rdname mcc
+#' @export
 mcc <- function(cases = NULL,
                 controls = NULL,
                 table = NULL,
@@ -128,8 +128,8 @@ mcc <- function(cases = NULL,
 
 #' @param a,b,c,d Single integerish values with cell counts that correspond to
 #'   a 2x2 table of matched case control data.
-#' @export
 #' @rdname mcc
+#' @export
 mcci <- function(a,
                  b,
                  c,
@@ -144,6 +144,7 @@ mcci <- function(a,
 }
 
 # Matched case-control internal function ---------------------------------------
+#' @noRd
 mcci_internal <- function(a, b, c, d, conf_level = 0.95) {
   cells <- mcc_cells(a, b, c, d)
   mcc_data <- mcc_data(cells)
@@ -160,6 +161,7 @@ mcci_internal <- function(a, b, c, d, conf_level = 0.95) {
 
 # Matched case-control internal helpers ----------------------------------------
 
+#' @noRd
 mcc_cells <- function(a, b, c, d) {
   a <- as.integer(a)
   b <- as.integer(b)
@@ -183,6 +185,7 @@ mcc_data <- function(cells) {
     stats::addmargins(FUN = Total, quiet = TRUE)
 }
 
+#' @noRd
 mcc_statistics <- function(cells, conf_level) {
   statistics <- list(
     diff = mcc_diff(cells, conf_level = conf_level),
