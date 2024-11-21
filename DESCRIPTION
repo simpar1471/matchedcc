@@ -1,7 +1,7 @@
 Type: Package
 Package: matchedcc
 Title: 'Stata'-Like Matched Case-Control Analysis
-Version: 0.1.1
+Version: 0.1.1.9000
 Date: 2024-11-19
 Authors@R:
     person(c("Simon", "R"), "Parker", email = "simon.parker.24@ucl.ac.uk",
