@@ -9,6 +9,7 @@
 [![CRAN
 status](https://www.r-pkg.org/badges/version/matchedcc)](https://CRAN.R-project.org/package=matchedcc)
 [![codecov](https://codecov.io/gh/simpar1471/matchedcc/graph/badge.svg?token=OJSHMFFGXN)](https://app.codecov.io/gh/simpar1471/matchedcc)
+[![DOI](https://zenodo.org/badge/829472734.svg)](https://doi.org/10.5281/zenodo.14199808)
 <!-- badges: end -->
 
 The aim of **matchedcc** is to provide epidemiologists using R with
